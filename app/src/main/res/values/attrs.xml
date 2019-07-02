@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Banner">
+        <attr name="Banner_left_image" format="reference" />
+        <attr name="Banner_text" format="string" />
+    </declare-styleable>
+</resources>
