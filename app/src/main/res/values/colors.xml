@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="commons_white">#FFFFFF</color>
     <color name="commons_blue_dark">#1b3bdd</color>
+    <color name="commons_light_blue">#ade6d8</color>
 </resources>

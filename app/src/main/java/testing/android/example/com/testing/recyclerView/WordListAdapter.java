@@ -43,8 +43,8 @@ public class WordListAdapter extends
         holder.wordItemView.setText(currentPosition);
 
         setRowLinearLayoutListener(holder, position);
-        Log.e("test3", "Holder to String: " + holder.toString());
-        Log.e("test3", "Holder Id: " + String.valueOf(holder.getItemId()));
+       // Log.e("test3", "Holder to String: " + holder.toString());
+       // Log.e("test3", "Holder Id: " + String.valueOf(holder.getItemId()));
 
         if (index == position) {
             paintItem(holder);
@@ -60,7 +60,7 @@ public class WordListAdapter extends
 //            if(index != -1) {
 //                unpaintItem(holder, position);
 //            }
-            Log.e("test1", lastIndex + " " + index + " " + position);
+            // Log.e("test1", lastIndex + " " + index + " " + position);
             lastIndex = index;
             index = position;
             notifyDataSetChanged();
@@ -69,8 +69,8 @@ public class WordListAdapter extends
 
     private void paintItem(WordViewHolder holder) {
 //        holder.row_linearLayout.setSelected(true);
-        Log.e("test2", "Holder to String: " + holder.toString());
-        Log.e("test2", "Holder Id: " + String.valueOf(holder.getItemId()));
+        //  Log.e("test2", "Holder to String: " + holder.toString());
+        // Log.e("test2", "Holder Id: " + String.valueOf(holder.getItemId()));
 
         holder.row_linearLayout.setSelected(true);
         holder.wordItemView.setSelected(true);

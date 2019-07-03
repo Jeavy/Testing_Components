@@ -47,7 +47,7 @@
     </android.support.v7.widget.RecyclerView>
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/add_button"
+        android:id="@+id/add_floating_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -57,5 +57,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="@color/commons_blue_dark"
         app:srcCompat="@drawable/ic_add_for_fab" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/new_word_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="13"
+        android:layout_marginStart="40dp"
+        android:padding="9dp"
+        android:paddingStart="12dp"
+        android:hint="Add a new word"
+        style="@style/Widget.AppCompat.EditText"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/add_floating_button"
+        app:layout_constraintTop_toTopOf="@id/add_floating_button"
+        app:layout_constraintBottom_toBottomOf="@id/add_floating_button"/>
 
 </android.support.constraint.ConstraintLayout>
