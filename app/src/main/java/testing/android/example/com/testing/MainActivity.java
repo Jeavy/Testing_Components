@@ -9,9 +9,9 @@ import android.view.View;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import testing.android.example.com.testing.banner.Banner;
-import testing.android.example.com.testing.banner.BannerActivity;
-import testing.android.example.com.testing.recyclerView.RecyclerViewActivity;
+import testing.android.example.com.testing.features.banner.Banner;
+import testing.android.example.com.testing.features.banner.BannerActivity;
+import testing.android.example.com.testing.features.recyclerView.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 

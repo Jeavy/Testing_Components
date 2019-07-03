@@ -20,12 +20,10 @@
         </activity>
 
         <activity
-            android:name=".banner.BannerActivity"
-            android:screenOrientation="portrait"/>
+            android:name=".features.banner.BannerActivity"
+            android:screenOrientation="portrait" />
 
-        <activity
-            android:name=".recyclerView.RecyclerViewActivity"
-            android:screenOrientation="portrait"/>
+        <activity android:name=".features.recyclerView.RecyclerViewActivity" />
 
     </application>
 

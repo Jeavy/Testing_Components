@@ -1,4 +1,4 @@
-package testing.android.example.com.testing.banner;
+package testing.android.example.com.testing.features.banner;
 
 import android.content.Context;
 import android.content.res.TypedArray;

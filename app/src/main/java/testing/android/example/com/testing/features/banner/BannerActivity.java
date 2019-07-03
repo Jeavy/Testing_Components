@@ -1,4 +1,4 @@
-package testing.android.example.com.testing.banner;
+package testing.android.example.com.testing.features.banner;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,7 +30,7 @@ public class BannerActivity extends AppCompatActivity {
     }
 
     private void bindViews() {
-        currentTime = findViewById(R.id.banner_current_time);
+        currentTime = findViewById(R.id.current_time);
         testbutton = findViewById(R.id.testbutton);
     }
 

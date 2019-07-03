@@ -1,10 +1,8 @@
 
-package testing.android.example.com.testing.recyclerView;
+package testing.android.example.com.testing.features.recyclerView;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,8 +20,6 @@ public class WordListAdapter extends
     private final LayoutInflater mInflater;
 
     private int index = -1;
-    private int lastIndex = -1;
-
 
     public WordListAdapter(Context context, List<String> wordList) {
         mInflater = LayoutInflater.from(context);
@@ -43,8 +39,6 @@ public class WordListAdapter extends
         holder.wordItemView.setText(currentPosition);
 
         setRowLinearLayoutListener(holder, position);
-       // Log.e("test3", "Holder to String: " + holder.toString());
-       // Log.e("test3", "Holder Id: " + String.valueOf(holder.getItemId()));
 
         if (index == position) {
             paintItem(holder);
@@ -57,32 +51,22 @@ public class WordListAdapter extends
 
     private void setRowLinearLayoutListener(WordViewHolder holder, int position) {
         holder.row_linearLayout.setOnClickListener(v -> {
-//            if(index != -1) {
-//                unpaintItem(holder, position);
-//            }
-            // Log.e("test1", lastIndex + " " + index + " " + position);
-            lastIndex = index;
             index = position;
             notifyDataSetChanged();
         });
     }
 
-    private void paintItem(WordViewHolder holder) {
-//        holder.row_linearLayout.setSelected(true);
-        //  Log.e("test2", "Holder to String: " + holder.toString());
-        // Log.e("test2", "Holder Id: " + String.valueOf(holder.getItemId()));
+    public int getSelectedIndex(){
+        return this.index;
+    }
 
+    private void paintItem(WordViewHolder holder) {
         holder.row_linearLayout.setSelected(true);
         holder.wordItemView.setSelected(true);
-//            holder.row_linearLayout.setBackgroundColor(Color.parseColor("#001DAB"));
-//            holder.wordItemView.setTextColor(Color.parseColor("#FFFFFF"));
     }
 
 
     private void unpaintItem(WordViewHolder holder) {
-//        holder.row_linearLayout.setSelected(false);
-//        holder.row_linearLayout.setBackgroundColor(Color.parseColor("#FFFFFF"));
-//        holder.wordItemView.setTextColor(Color.parseColor("#000000"));
         holder.row_linearLayout.setSelected(false);
         holder.wordItemView.setSelected(false);
     }
